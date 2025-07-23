@@ -1,24 +1,303 @@
-.titulo {
-    width: 1440px ;
-    height: 109px;
-    padding: 28px 30px 28px 30px;
-    background-color: #C4C4C4;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.descrimagem{
-    width: 1440px ;
-    height: 318px;
-    padding: 28px 30px 28px 30px;
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+header {
+    width: 100%;
+    background-color: #c4c4c4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+header nav a {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    font-weight: 800;
+    color: grey;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.sectionOne {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
     background-color: #F3F3F3;
-}
-
-.imagem{
-    width: 247px ;
-    height: 247px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
     padding: 32px;
-    border-radius: 50%;
 }
 
-.descricao {
-    padding: 32px
+.sectionOne div {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sectionOne div p {
+    line-height: 24px;
+}
+
+.imagem {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+.imagem:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.sectionTwo {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sectionTwo p {
+    font-size: 24px;
+}
+
+.sectionTwo li {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+    width: 102px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sectionTwo li:hover{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hobbies p {
+    display: flex;
+    justify-content: right;
+}
+
+.hobbies ul {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.tops {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tops p {
+    display: flex;
+    justify-content: left;
+}
+
+.tops ol {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+form h2 {
+    margin-left: 10%;
+}
+
+.pergunta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.pergunta input {
+    width: 70%;
+    height: 56px;
+    background-color: #D9D9D9;
+    color: #444444;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.pergunta input:hover {
+    background-color: #c4c4c4;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+}
+
+form button {
+    font-size: 16px;
+    width: 127px;
+    height: 39px;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border: 0;
+    margin-left: 80%;
+}
+
+form button:hover {
+    background-color: #c4c4c4;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    width: 100%;
+    background-color: #c4c4c4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 32px;
+}
+
+footer nav a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+footer img {
+    width: 32px;
+    height: 32px;
+}
+
+.contato {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #F3F3F3;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 32px;
+}
+
+.contato:hover {
+    font-weight: 600;
+    background-color: #e2e2e2;
+}
+
+@media (max-width: 1171px) {
+    .sectionOne {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .imagem {
+        width: 247px;
+        height: 247px;
+    }
+
+    .sectionOne div {
+        align-items: center;
+    }
+
+    .sectionTwo {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hobbies p {
+        justify-content: center;
+    }
+
+    .tops p {
+        justify-content: center;
+    }
+
+    .hobbies ul,
+    .tops ol {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    form button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
